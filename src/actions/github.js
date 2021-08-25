@@ -4,7 +4,7 @@ import { GET_REPOS, NO_REPOS } from './types';
 // Get Github Repos
 export const getGithubRepos = (username) => async (dispatch) => {
     try {
-        const res = await api.get(`users/${username}/repos?per_page=5&sort=created:asc`)
+        const res = await api.get(`users/${username}/repos?sort=created:asc`)
 
         dispatch({
             type: GET_REPOS,
