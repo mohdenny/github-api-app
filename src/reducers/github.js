@@ -1,8 +1,7 @@
 import { GET_REPOS, NO_REPOS } from "../actions/types";
 
 const initialState = {
-    repos: [],
-    loading: true
+    repos: []
 }
 
 function githubReducer(state = initialState, action) {
