@@ -14,17 +14,21 @@ const SearchBar = ({ getGithubRepos }) => {
 
     return (
         <Fragment>
-            <form className="px-4 py-2" onSubmit={onSubmit}>
-                <div className="flex items-center">
-                    <input 
-                        className='shadow border-gray-400 hover:border-gray-500 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight mb-3 focus:outline-none focus:shadow-outline'
-                        type='text' 
-                        value={term}
-                        placeholder="Search github username ..."
-                        onChange={(e) => setTerm(e.target.value)}
-                    />
+            <div className="flex flex-col justify-center items-center">
+                <div className="w-full max-w-xs">
+                    <form className="px-4 py-2" onSubmit={onSubmit}>
+                        <div className="flex items-center">
+                            <input 
+                                className='shadow border-gray-400 hover:border-gray-500 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight mb-3 focus:outline-none focus:shadow-outline'
+                                type='text' 
+                                value={term}
+                                placeholder="Search github username ..."
+                                onChange={(e) => setTerm(e.target.value)}
+                            />
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </Fragment>
     )
 };
