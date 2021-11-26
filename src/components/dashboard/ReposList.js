@@ -46,7 +46,7 @@ const ReposList = ({ repos }) => {
 
     return (
         <Fragment>
-            <div className="flex flex-col space-y-4 justify-center items-center">
+            <div className="flex flex-col space-y-4 px-2 justify-center items-center">
                 {   
                     repos && repos.length > 0 ?
                         renderedList 
