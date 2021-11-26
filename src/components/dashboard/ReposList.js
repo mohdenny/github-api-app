@@ -60,7 +60,7 @@ const ReposList = ({ repos }) => {
                 }
 
                 {   
-                    state.visible < repos.length && <button onClick={loadMore} type="button" className="load-more p-2 rounded-xl border-2 border-gray-300 hover:bg-gray-300">Load more</button>
+                    state.visible < repos.length && <button onClick={loadMore} type="button" className="load-more px-2 rounded-xl border-2 border-gray-300 hover:bg-gray-300">Load more</button>
                 }
             </div>
         </Fragment>
