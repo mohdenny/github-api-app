@@ -19,7 +19,7 @@ const SearchBar = ({ getGithubRepos }) => {
                     <form className="px-4 py-2" onSubmit={onSubmit}>
                         <div className="flex items-center">
                             <input 
-                                className='shadow-lg rounded-lg border-gray-400 hover:border-gray-500 appearance-none border w-full py-2 px-3 text-gray-700 leading-tight mb-3 focus:outline-none focus:shadow-outline'
+                                className='rounded-lg border-gray-400 hover:border-gray-500 appearance-none border w-full py-2 px-3 text-gray-700 leading-tight mb-3 focus:outline-none focus:shadow-outline'
                                 type='text' 
                                 value={term}
                                 placeholder="Search github username ..."
