@@ -31,13 +31,13 @@ const ReposList = ({ repos }) => {
                         {repo.name}
                     </a>
                 </div>
-                <div className="flex flex-col justify-center items-center px-2 text-gray-900 text-sm">
+                <div className="flex flex-col hidden sm:inline-block justify-center items-center px-2 text-gray-900 text-sm">
                     Stars: {repo.stargazers_count}
                 </div>
-                <div className="flex flex-col justify-center items-center px-2 text-gray-900 text-sm">
+                <div className="flex flex-col hidden sm:inline-block justify-center items-center px-2 text-gray-900 text-sm">
                     Watchers: {repo.watchers_count}
                 </div>
-                <div className="flex flex-col justify-center items-center px-2 text-gray-900 text-sm">
+                <div className="flex flex-col hidden sm:inline-block justify-center items-center px-2 text-gray-900 text-sm">
                     Forks: {repo.forks_count}
                 </div>
             </div>
