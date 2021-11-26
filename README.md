@@ -11,6 +11,9 @@ Dengan Ketentuan :
 
 ======================================
 
+Live Demo : https://infallible-poincare-6ad975.netlify.app/
+
+======================================
 How To Run:
 - Download Sorce Code
 - npm install
