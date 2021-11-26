@@ -13,11 +13,13 @@ const App = () => {
       <Router>
         <Fragment>
           <Navbar />
-            <section className='container mx-auto p-8'>
-              <Switch>
-                <Route exact path="/" component={Dashboard} />
-                <Route exact path="/:id" component={Dashboard} />
-              </Switch>
+            <section className="h-screen w-full">
+              <div className='container mx-auto py-8'>
+                <Switch>
+                  <Route exact path="/" component={Dashboard} />
+                  <Route exact path="/:id" component={Dashboard} />
+                </Switch>
+              </div>
             </section>
         </Fragment>
       </Router>
