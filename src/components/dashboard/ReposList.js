@@ -15,7 +15,7 @@ const ReposList = ({ repos }) => {
 
     const renderedList = repos.slice(0, state.visible).map((repo => {
         return (
-            <div key={repo.id} className="p-2 flex items-center justify-between h-16 border rounded-lg w-full max-w-2xl shadow-lg space-x-4 bg-white">
+            <div key={repo.id} className="p-2 flex items-center justify-between h-16 border-2 rounded-lg w-full max-w-2xl shadow-lg space-x-4 bg-white">
                 <div className="flex justify-center items-center h-full w-full px-2">
                     <a href={repo.owner.avatar_url} target="_blank" rel='noopener noreferrer'>
                         <img className="h-10 w-10 rounded-full hover:opacity-50" src={repo.owner.avatar_url} alt={repo.owner.login} />
@@ -60,7 +60,7 @@ const ReposList = ({ repos }) => {
                 }
 
                 {   
-                    state.visible < repos.length && <button onClick={loadMore} type="button" className="load-more p-2 rounded-xl border-gray-300 hover:bg-gray-300">Load more</button>
+                    state.visible < repos.length && <button onClick={loadMore} type="button" className="load-more p-2 rounded-xl border-2 border-gray-300 hover:bg-gray-300">Load more</button>
                 }
             </div>
         </Fragment>
